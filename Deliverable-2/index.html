@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="weather-dashboard">
+    <!-- Input Section -->
+    <form id="city-form">
+      <input type="text" id="city-input" placeholder="Enter city name" required>
+      <button type="submit">Get Weather</button>
+    </form>
+    
+    <!-- Current Weather Section -->
+    <div class="current-weather">
+      <h1 id="temperature">--°</h1>
+      <p id="location">City Name</p>
+      <p id="date">Date</p>
+    </div>
+
+    <!-- Forecast Section -->
+    <div class="forecast">
+      <h2>24-hour forecast</h2>
+      <div class="hourly-forecast" id="hourly-forecast">
+        <!-- JavaScript will populate this section -->
+      </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="map" id="map"></div>
+
+    <!-- Conditions Section -->
+    <div class="conditions" id="conditions">
+      <p>UV Index: --</p>
+      <p>Chance of Rain: --</p>
+      <p>Wind: --</p>
+      <p>Real Feel: --°</p>
+    </div>
+  </div>
+
+  <!-- Link to the JavaScript files -->
+  <script src="fetchWeather.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=17ada1ec5cb68dd36cf8b0e44589a2b8
+  &callback=initMap"></script>
+</body>
+</html>
