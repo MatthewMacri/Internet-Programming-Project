@@ -1,0 +1,58 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+}
+
+.weather-app {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+}
+
+#search-form {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#city-input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#weather-display {
+  padding: 20px;
+}
+
+#map {
+  width: 100%; /* Adjust width as needed */
+  height: 300px; /* Ensure the height is defined */
+  border: none;
+}
+

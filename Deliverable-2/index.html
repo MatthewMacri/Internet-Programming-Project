@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="weather-app">
+    <!-- Search Form -->
+    <form id="search-form">
+      <input type="text" id="city-input" placeholder="Enter city, state, or country" required>
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- Weather Display -->
+    <div id="weather-display">
+      <h1 id="city-name">City Name</h1>
+      <h2 id="temperature">--°C</h2>
+      <p id="description">Description: --</p>
+      <p id="humidity">Humidity: --%</p>
+      <p id="wind-speed">Wind Speed: -- km/h</p>
+    </div>
+
+    <!-- Google Map -->
+    <div id="map"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0ErEit28wPZQnZkWTTdogQVg4f7SeMk8&callback=initMap"
+    async
+    defer>
+  </script>
+</body>
+</html>
