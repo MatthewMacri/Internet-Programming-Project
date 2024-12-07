@@ -1,0 +1,110 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 50px;
+
+  /* Background gradient */
+  background: linear-gradient(to bottom, #6dd5fa, #2980b9);
+
+  /* Optional: Background image */
+  background-image: url('https://lh3.googleusercontent.com/p/AF1QipPjffAWH3wpnOrA5BeJQqPAK1Dy43whoM94uiJU=s680-w680-h510');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  /* Fallback color if the image fails */
+  background-color: #6dd5fa;
+}
+
+.weather-app {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  flex: 1;
+}
+
+#search-form {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#city-input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #ff0000;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+#weather-display {
+  padding: 20px;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* Recent Searches */
+#recent-searches-section {
+  padding: 20px;
+  text-align: left;
+}
+
+#recent-searches {
+  list-style-type: none;
+  padding: 0;
+}
+
+#recent-searches li {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #f0f4f8;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#recent-searches li:hover {
+  background-color: #ff1100;
+  color: white;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #ff0800; 
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9em;
+  font-weight: bold;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px; 
+}
+
+.weather-app {
+  margin-bottom: 50px;
+}
