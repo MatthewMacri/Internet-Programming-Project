@@ -8,13 +8,11 @@
 </head>
 <body>
   <div class="weather-app">
-    <!-- Search Form -->
     <form id="search-form">
       <input type="text" id="city-input" placeholder="Enter city, state, or country" required>
       <button type="submit">Search</button>
     </form>
 
-    <!-- Weather Display -->
     <div id="weather-display">
       <h1 id="city-name">City Name</h1>
       <h2 id="temperature">--°C</h2>
@@ -23,11 +21,19 @@
       <p id="wind-speed">Wind Speed: -- km/h</p>
     </div>
 
-    <!-- Google Map -->
+    <div id="recent-searches-section">
+      <h3>Recent Searches</h3>
+      <ul id="recent-searches"></ul>
+    </div>
+
     <div id="map"></div>
+    <p>Weather App - Powered by OpenWeatherMap API</p>
   </div>
 
-  <!-- Scripts -->
+  <footer>
+    All Rights Reserved © 2024 Matthew Macri
+  </footer>
+
   <script src="script.js" defer></script>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0ErEit28wPZQnZkWTTdogQVg4f7SeMk8&callback=initMap"
